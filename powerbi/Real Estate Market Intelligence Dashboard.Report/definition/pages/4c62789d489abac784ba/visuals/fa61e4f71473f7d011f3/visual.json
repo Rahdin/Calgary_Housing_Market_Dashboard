@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "fa61e4f71473f7d011f3",
   "position": {
-    "x": 891.10880596596485,
-    "y": 0,
+    "x": 892.25714205612712,
+    "y": 129.76197818834282,
     "z": 3000,
-    "height": 141.24533908996608,
+    "height": 112.53693683590792,
     "width": 331.86913005691218,
     "tabOrder": 3000
   },
@@ -52,5 +52,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5a009d0a0c71ef859e08",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Distinct Brokerages"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

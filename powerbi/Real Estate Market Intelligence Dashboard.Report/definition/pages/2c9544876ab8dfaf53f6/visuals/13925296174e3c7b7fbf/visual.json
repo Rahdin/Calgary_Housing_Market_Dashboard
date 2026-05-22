@@ -3,9 +3,9 @@
   "name": "13925296174e3c7b7fbf",
   "position": {
     "x": 30.127019151885484,
-    "y": 310.54004356558886,
+    "y": 391.6512489745113,
     "z": 3000,
-    "height": 409.03222156213752,
+    "height": 327.92101615321508,
     "width": 1237.5252482389883,
     "tabOrder": 3000
   },
@@ -55,7 +55,8 @@
                 }
               },
               "queryRef": "Listings.Average Price per SqFt",
-              "nativeQueryRef": "Average Price per SqFt"
+              "nativeQueryRef": "Average Price per SqFt",
+              "format": "\\$#,0;(\\$#,0);\\$#,0"
             },
             {
               "field": {
@@ -69,7 +70,8 @@
                 }
               },
               "queryRef": "Listings.Median SqFt",
-              "nativeQueryRef": "Median SqFt"
+              "nativeQueryRef": "Median SqFt",
+              "format": "0"
             }
           ]
         }

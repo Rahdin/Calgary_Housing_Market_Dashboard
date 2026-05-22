@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "ca11c3333a029770f6a5",
   "position": {
-    "x": 68.365158844663213,
-    "y": 12.746046564259244,
+    "x": 0,
+    "y": 178.44465189962941,
     "z": 0,
-    "height": 280.41302441370334,
-    "width": 571.25463237998247,
+    "height": 237.53995869755863,
+    "width": 631.50867068375339,
     "tabOrder": 0
   },
   "visual": {
@@ -101,5 +101,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ab77d99d7628c778a57d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "BedBand"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d2e60ede5974963f7d3e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median Price per SqFt"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

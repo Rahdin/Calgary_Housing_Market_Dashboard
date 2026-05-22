@@ -1,0 +1,77 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "daf02364ea93912bce2c",
+  "position": {
+    "x": 941.6355939331072,
+    "y": 0,
+    "z": 2003,
+    "height": 129.76197818834282,
+    "width": 299.715719532367,
+    "tabOrder": 2003
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Listings"
+                    }
+                  },
+                  "Property": "BedBand"
+                }
+              },
+              "queryRef": "Listings.BedBand",
+              "nativeQueryRef": "BedBand",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Between'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "syncGroup": {
+      "groupName": "BedBand",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "87f3f126dab68849f91e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "BedBand"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

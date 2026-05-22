@@ -3,9 +3,9 @@
   "name": "23b842f047409e7592af",
   "position": {
     "x": 0,
-    "y": 0,
+    "y": 150.63509575942743,
     "z": 0,
-    "height": 381.22266542193557,
+    "height": 247.96854225013436,
     "width": 571.25463237998247,
     "tabOrder": 0
   },
@@ -184,6 +184,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "a0101fc2f7446a472893",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listing Count"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

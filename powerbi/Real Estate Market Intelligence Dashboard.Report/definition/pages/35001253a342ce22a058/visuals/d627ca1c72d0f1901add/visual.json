@@ -3,9 +3,9 @@
   "name": "d627ca1c72d0f1901add",
   "position": {
     "x": 0,
-    "y": 338.34959970579081,
+    "y": 407.87349005629579,
     "z": 2000,
-    "height": 381.22266542193557,
+    "height": 311.69877507143059,
     "width": 1258.3824153441399,
     "tabOrder": 2000
   },
@@ -113,5 +113,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "24467f2a3fd669fb8709",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Brokerage"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "00b230c5c9fbe486c740",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listing Count"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6492ef3b25600baadf21",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Market Share %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b201faa7474f4db35102",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median Price"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

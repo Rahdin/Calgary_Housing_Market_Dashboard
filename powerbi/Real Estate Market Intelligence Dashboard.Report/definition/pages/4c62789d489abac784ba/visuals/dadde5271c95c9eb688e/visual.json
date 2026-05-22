@@ -3,10 +3,10 @@
   "name": "dadde5271c95c9eb688e",
   "position": {
     "x": 296.27071126188008,
-    "y": 4.5933443606493034,
+    "y": 115.9819451063949,
     "z": 1000,
     "height": 136.65199472931678,
-    "width": 300.86405562252935,
+    "width": 292.82570299139309,
     "tabOrder": 1000
   },
   "visual": {
@@ -52,5 +52,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "79ca97217b78d10d9dba",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median Price"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

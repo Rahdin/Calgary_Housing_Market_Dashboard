@@ -3,9 +3,9 @@
   "name": "355949de02f5334f1976",
   "position": {
     "x": 716.09607061020108,
-    "y": 0,
+    "y": 176.12718888794592,
     "z": 1000,
-    "height": 296.63526549548783,
+    "height": 276.9368298961781,
     "width": 564.302243344932,
     "tabOrder": 1000
   },
@@ -93,5 +93,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "03929750a89b5e3af076",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Quadrant"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "254c873f5cd8ebe1a4a8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median Price"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "862f2a85a4a9099e541c",
   "position": {
-    "x": 456.54021330164926,
-    "y": 18.539704093467989,
+    "x": 454.22275028996575,
+    "y": 155.27002178279443,
     "z": 1000,
-    "height": 279.25429290786161,
+    "height": 221.31771761577414,
     "width": 389.33378596282779,
     "tabOrder": 1000
   },
@@ -111,6 +111,20 @@
         },
         "type": "Advanced",
         "howCreated": "User"
+      },
+      {
+        "name": "ae714e1cc07176a4019e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listings Under 500K"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

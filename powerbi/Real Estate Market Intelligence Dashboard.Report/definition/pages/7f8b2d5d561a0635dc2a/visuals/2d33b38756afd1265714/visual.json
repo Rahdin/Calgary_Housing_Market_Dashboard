@@ -3,9 +3,9 @@
   "name": "2d33b38756afd1265714",
   "position": {
     "x": 25.492093128518487,
-    "y": 409.03222156213752,
+    "y": 453.064018784124,
     "z": 3000,
-    "height": 286.2066819429121,
+    "height": 242.17488472092563,
     "width": 640.77852273048745,
     "tabOrder": 3000
   },
@@ -73,6 +73,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Listings"
+                  }
+                },
+                "Property": "Average Price per SqFt"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
@@ -91,5 +108,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0a02da3d79c67d5ab2a7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "PostalArea"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "365b68dea99a6691a124",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listing Count"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b50b0f043b8e6cdadf5f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median Price"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d5acad5b40336af52bc9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Average Price per SqFt"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

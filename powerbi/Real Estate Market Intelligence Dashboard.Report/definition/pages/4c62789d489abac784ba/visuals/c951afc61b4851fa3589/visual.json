@@ -3,7 +3,7 @@
   "name": "c951afc61b4851fa3589",
   "position": {
     "x": 19.521713532759538,
-    "y": 0,
+    "y": 115.9819451063949,
     "z": 0,
     "height": 141.24533908996608,
     "width": 276.7489977291205,
@@ -70,5 +70,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b4ac2168e3eac5a24cd8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listing Count"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

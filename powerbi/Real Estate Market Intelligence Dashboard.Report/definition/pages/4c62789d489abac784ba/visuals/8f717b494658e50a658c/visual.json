@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "8f717b494658e50a658c",
   "position": {
-    "x": 53.971796237629313,
-    "y": 175.69542179483585,
+    "x": 32.153410524545123,
+    "y": 280.1940059996075,
     "z": 7000,
     "height": 225.07387367181585,
     "width": 556.94300372872806,
@@ -86,5 +86,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "453cd98429046e5b7560",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "PriceTier"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "911e0f443fc139cefe2c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listing Count"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

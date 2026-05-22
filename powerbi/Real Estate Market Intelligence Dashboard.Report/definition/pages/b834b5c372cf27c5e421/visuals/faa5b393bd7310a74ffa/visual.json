@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "faa5b393bd7310a74ffa",
   "position": {
-    "x": 68.365158844663213,
-    "y": 302.42892302469659,
+    "x": 59.095306797929219,
+    "y": 415.984610597188,
     "z": 2000,
-    "height": 375.42900789272682,
+    "height": 261.87332032023534,
     "width": 589.79433647345047,
     "tabOrder": 2000
   },
@@ -105,5 +105,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "11698d8ca10e6111055e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Neighborhood"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "18f3c892105a92977a33",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Quadrant"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a688a37237e2ae0db5ba",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median SqFt"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "398cb9d09bea35239b9d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median Price"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

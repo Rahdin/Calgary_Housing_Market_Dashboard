@@ -3,7 +3,7 @@
   "name": "0f6e769b6ab362e81afc",
   "position": {
     "x": 589.09641425327311,
-    "y": 4.5933443606493034,
+    "y": 115.9819451063949,
     "z": 2000,
     "height": 136.65199472931678,
     "width": 302.01239171269168,
@@ -52,5 +52,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ae90a2de9c3f70770182",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Average Price per SqFt"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

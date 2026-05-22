@@ -3,9 +3,9 @@
   "name": "f5842c13816e0f5d2e64",
   "position": {
     "x": 716.09607061020108,
-    "y": 409.03222156213752,
+    "y": 464.65133384254148,
     "z": 2000,
-    "height": 286.2066819429121,
+    "height": 230.58756966250812,
     "width": 564.302243344932,
     "tabOrder": 2000
   },
@@ -86,5 +86,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0eb7c6b4be31cf6d15fe",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Quadrant"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7313372f23fec6bfdbc4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Average SqFt"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
