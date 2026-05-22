@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Real Estate Market Intelligence Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "516fd02f-5f3a-4103-95c3-c0164eebe9ba"
+  }
+}

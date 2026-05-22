@@ -1,0 +1,204 @@
+table Listings
+	lineageTag: ff05ddac-2cf6-49ec-9aed-c277ea57a7a7
+
+	measure 'Listing Count' = COUNTROWS('Listings')
+		formatString: 0
+		lineageTag: a7475250-5368-4c2c-8223-c1e18a962a24
+
+	measure 'Median Price' = MEDIAN('Listings'[Price])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 808801a4-ef9e-4848-891f-9ccb5c14b55c
+
+	measure 'Average Price' = AVERAGE('Listings'[Price])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 7d0df5a6-513f-423c-af7e-8ad54c877680
+
+	measure 'Min Price' = MIN('Listings'[Price])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: fd8cf967-2cd5-4752-bd44-10975b286d28
+
+	measure 'Max Price' = MAX('Listings'[Price])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 056a3afb-4d0f-43cf-8365-1ef56257a1b6
+
+	measure 'Median Price per SqFt' = MEDIAN('Listings'[PricePerSqFt])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 854db713-5d07-4b37-8bfc-753cc9eadd3b
+
+	measure 'Average Price per SqFt' = AVERAGE('Listings'[PricePerSqFt])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: cdc42768-1b54-478c-b429-dc0ed246bef9
+
+	measure 'Median SqFt' = MEDIAN('Listings'[SqFt])
+		lineageTag: 59582827-6a62-4a91-b2fc-a7d97b215fce
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average SqFt' = AVERAGE('Listings'[SqFt])
+		lineageTag: badda749-09f9-450f-8403-0693ca25e6f8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Distinct Neighbourhoods' = DISTINCTCOUNT('Listings'[Neighborhood])
+		lineageTag: 58346c6d-299d-4e3a-9c65-96a0814a39a1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Distinct Brokerages' = DISTINCTCOUNT('Listings'[Brokerage])
+		formatString: 0
+		lineageTag: 42c9dc91-3e5d-4c13-a9f5-477c72d3ec6e
+
+	measure 'Market Share %' = DIVIDE([Listing Count], CALCULATE([Listing Count], ALLSELECTED('Listings')))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: dba83e2d-419b-4f0e-8a73-1780a1e2c531
+
+	measure 'Listings Under 500K' = CALCULATE([Listing Count], 'Listings'[Price] <= 500000)
+		formatString: 0
+		lineageTag: d9ac7996-0bbc-4ac4-965f-f1581e2e1a4b
+
+	measure '% Listings Under 500K' = DIVIDE([Listings Under 500K], [Listing Count])
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 9d910c6f-d509-474c-8894-3eae4ff3e872
+
+	measure 'Listings Under 1M' = CALCULATE([Listing Count], 'Listings'[Price] <= 1000000)
+		formatString: 0
+		lineageTag: 25bdce63-b6c0-4604-8cc6-d86283df6a55
+
+	measure 'Total Listing Value' = SUM('Listings'[Price])
+		formatString: 0
+		lineageTag: 864dd80f-6a94-448a-8ef1-42424de84b98
+
+	column Address
+		dataType: string
+		lineageTag: d588c358-2ff2-45fc-aa76-71a4d5ae3792
+		summarizeBy: none
+		sourceColumn: Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: int64
+		formatString: 0
+		lineageTag: 99f73f29-0f93-449e-b280-00d84b2aefda
+		summarizeBy: sum
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column Neighborhood
+		dataType: string
+		lineageTag: 69f29d03-7d3e-41d1-88b0-dbc9107235b6
+		summarizeBy: none
+		sourceColumn: Neighborhood
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quadrant
+		dataType: string
+		lineageTag: 9e223905-3627-4161-8327-f1417628c612
+		summarizeBy: none
+		sourceColumn: Quadrant
+
+		annotation SummarizationSetBy = Automatic
+
+	column PostalArea
+		dataType: string
+		lineageTag: bcea2203-f0d3-4de1-9f73-14e275bcc564
+		summarizeBy: none
+		sourceColumn: PostalArea
+
+		annotation SummarizationSetBy = Automatic
+
+	column Province
+		dataType: string
+		lineageTag: 64035933-f34b-4f10-8e74-cde057f31dd7
+		summarizeBy: none
+		sourceColumn: Province
+
+		annotation SummarizationSetBy = Automatic
+
+	column PropertyType
+		dataType: string
+		lineageTag: cb66ec44-fb7a-4709-a9d0-7659a2fca631
+		summarizeBy: none
+		sourceColumn: PropertyType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Beds
+		dataType: int64
+		formatString: 0
+		lineageTag: f0d80eb7-8ec7-41bf-b351-9eef677a6f1f
+		summarizeBy: sum
+		sourceColumn: Beds
+
+		annotation SummarizationSetBy = Automatic
+
+	column Baths
+		dataType: double
+		lineageTag: 766b3690-1688-460a-bdb1-4e35bc80d359
+		summarizeBy: sum
+		sourceColumn: Baths
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SqFt
+		dataType: int64
+		formatString: 0
+		lineageTag: 0da576bd-5154-4c6e-b2e0-f3db71bd6198
+		summarizeBy: sum
+		sourceColumn: SqFt
+
+		annotation SummarizationSetBy = Automatic
+
+	column PricePerSqFt
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ace7df2-48bf-40bc-a2f6-6dcfc9db6df2
+		summarizeBy: sum
+		sourceColumn: PricePerSqFt
+
+		annotation SummarizationSetBy = Automatic
+
+	column PriceTier
+		dataType: string
+		lineageTag: ffcf3d5d-7aa8-458f-97e6-d95ed3aefe06
+		summarizeBy: none
+		sourceColumn: PriceTier
+
+		annotation SummarizationSetBy = Automatic
+
+	column BedBand
+		dataType: int64
+		formatString: 0
+		lineageTag: cb854a97-0591-4348-9f67-05f0ae827c42
+		summarizeBy: sum
+		sourceColumn: BedBand
+
+		annotation SummarizationSetBy = Automatic
+
+	column Brokerage
+		dataType: string
+		lineageTag: 7d4b1bae-e058-4352-bfa3-33f4a6f2f98b
+		summarizeBy: none
+		sourceColumn: Brokerage
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Listings = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("F:\Real Estate PowerBI project\CalgaryMarketIntelligence\Calgary_Listings_Modeled.csv"),[Delimiter=",", Columns=14, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Address", type text}, {"Price", Int64.Type}, {"Neighbourhood", type text}, {"Quadrant", type text}, {"PostalArea", type text}, {"Province", type text}, {"PropertyType", type text}, {"Beds", Int64.Type}, {"Baths", type number}, {"SqFt", Int64.Type}, {"PricePerSqFt", Int64.Type}, {"PriceTier", type text}, {"BedBand", Int64.Type}, {"Brokerage", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Neighbourhood", "Neighborhood"}})
+				in
+				    #"Renamed Columns"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+
