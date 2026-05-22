@@ -16,8 +16,7 @@ _Published to the Power BI Service. Viewing may require sign-in and access permi
 
 ## 📊 Dashboard Preview
 
-> _Add your screenshots to a `/screenshots` folder and update the paths below._
-> _Recruiters usually can't open a `.pbix`, so these images are what most people will actually see._
+
 
 | Market Overview | Geographic Analysis |
 |---|---|
@@ -126,9 +125,6 @@ _(Full measure list lives in the `.pbip` / model files.)_
 └── README.md
 ```
 
-> Tip: for clean, reviewable version control, export from Power BI Desktop with
-> **File ▸ Save as ▸ Power BI project (`.pbip`)** and commit that folder — the model (TMDL)
-> and report definition are text-based and diff-able on GitHub.
 
 ---
 
