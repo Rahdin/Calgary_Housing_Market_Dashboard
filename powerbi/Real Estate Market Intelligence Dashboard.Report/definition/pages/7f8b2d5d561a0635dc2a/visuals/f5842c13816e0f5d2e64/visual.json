@@ -86,37 +86,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0eb7c6b4be31cf6d15fe",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Quadrant"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "7313372f23fec6bfdbc4",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Average SqFt"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

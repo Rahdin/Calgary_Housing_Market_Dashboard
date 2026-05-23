@@ -4,10 +4,10 @@
   "position": {
     "x": 941.6355939331072,
     "y": 0,
-    "z": 2003,
+    "z": 5000,
     "height": 129.76197818834282,
     "width": 299.715719532367,
-    "tabOrder": 2003
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -47,6 +47,11 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
       ]
     },
     "syncGroup": {
@@ -55,23 +60,5 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "87f3f126dab68849f91e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "BedBand"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

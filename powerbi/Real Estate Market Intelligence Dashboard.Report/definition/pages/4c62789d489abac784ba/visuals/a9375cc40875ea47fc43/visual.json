@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "a9375cc40875ea47fc43",
   "position": {
-    "x": 19.521713532759538,
-    "y": 0,
-    "z": 8001,
-    "height": 129.76197818834282,
-    "width": 299.715719532367,
-    "tabOrder": 8001
+    "x": 69.2829557879391,
+    "y": 1.5311264683618833,
+    "z": 9000,
+    "height": 120,
+    "width": 240,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "slicer",
@@ -50,49 +50,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "l",
-                    "Entity": "Listings",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "l"
-                                }
-                              },
-                              "Property": "Quadrant"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'SE'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },
@@ -106,7 +64,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "ad9c18d7b34e33c6b7b1",
+        "name": "5c2b28157252a0921f2f",
         "field": {
           "Column": {
             "Expression": {

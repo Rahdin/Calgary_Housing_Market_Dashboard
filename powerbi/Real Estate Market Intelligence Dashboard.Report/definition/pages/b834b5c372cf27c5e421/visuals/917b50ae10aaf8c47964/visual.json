@@ -116,37 +116,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f10d413a8695dd7ca54f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "PropertyType"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "09eaa2dae56dc3e23a6f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Average Price per SqFt"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

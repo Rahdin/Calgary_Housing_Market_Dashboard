@@ -3,10 +3,10 @@
   "name": "e8d0ca40ab7c33eced31",
   "position": {
     "x": 465.07611651574194,
-    "y": 531.67960974515688,
+    "y": 523,
     "z": 6000,
-    "height": 188.32711878662144,
-    "width": 326.12744960610053,
+    "height": 180,
+    "width": 357,
     "tabOrder": 6000
   },
   "visual": {
@@ -86,37 +86,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a3d1e0d7ea3708b36170",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "PriceTier"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "2d4ae9ab3db53216bb4d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Listing Count"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

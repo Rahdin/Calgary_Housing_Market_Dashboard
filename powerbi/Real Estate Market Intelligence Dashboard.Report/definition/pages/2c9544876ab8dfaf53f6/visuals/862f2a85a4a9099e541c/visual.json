@@ -111,20 +111,6 @@
         },
         "type": "Advanced",
         "howCreated": "User"
-      },
-      {
-        "name": "ae714e1cc07176a4019e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Listings Under 500K"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

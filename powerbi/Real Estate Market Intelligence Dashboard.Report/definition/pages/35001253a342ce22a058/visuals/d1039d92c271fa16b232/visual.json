@@ -225,20 +225,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "e7d6055aa5ad26d71589",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Listing Count"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

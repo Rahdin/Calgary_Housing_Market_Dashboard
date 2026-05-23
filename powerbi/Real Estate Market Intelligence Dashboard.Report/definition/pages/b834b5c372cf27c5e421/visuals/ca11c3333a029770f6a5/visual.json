@@ -101,37 +101,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ab77d99d7628c778a57d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "BedBand"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d2e60ede5974963f7d3e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Median Price per SqFt"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

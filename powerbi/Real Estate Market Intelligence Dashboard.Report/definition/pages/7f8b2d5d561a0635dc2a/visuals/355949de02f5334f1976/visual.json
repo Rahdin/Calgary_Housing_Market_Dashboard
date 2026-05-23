@@ -93,37 +93,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "03929750a89b5e3af076",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Quadrant"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "254c873f5cd8ebe1a4a8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Median Price"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

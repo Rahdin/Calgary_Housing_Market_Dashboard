@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "8a1edde0faad5000ba28",
   "position": {
-    "x": 507.564551851748,
+    "x": 523.64125711402062,
     "y": 0,
-    "z": 8002,
-    "height": 115.9819451063949,
-    "width": 299.715719532367,
-    "tabOrder": 8002
+    "z": 10000,
+    "height": 120.57528946704421,
+    "width": 240.0022428439261,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "slicer",
@@ -50,49 +50,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "l",
-                    "Entity": "Listings",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "l"
-                                }
-                              },
-                              "Property": "PropertyType"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Condo/Apt'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },
@@ -106,7 +64,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "4f51a05d10d7c925bd7a",
+        "name": "c003b3c64ace3d40de4a",
         "field": {
           "Column": {
             "Expression": {

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "3bd568dddd8927e30043",
   "position": {
-    "x": 848.62037062995876,
-    "y": 532.82794583531916,
+    "x": 853.21371499060808,
+    "y": 522.49292102385823,
     "z": 8000,
-    "height": 187.17878269645911,
-    "width": 419.14267290924892,
+    "height": 180.28876615548515,
+    "width": 357.1325240404833,
     "tabOrder": 8000
   },
   "visual": {
@@ -86,37 +86,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cff8c59b5c9bb8a05a81",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Beds"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "1760d16e802ce760dd83",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Listing Count"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

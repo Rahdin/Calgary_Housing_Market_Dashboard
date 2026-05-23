@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "8f717b494658e50a658c",
   "position": {
-    "x": 32.153410524545123,
-    "y": 280.1940059996075,
+    "x": 70.048501499901874,
+    "y": 293.97403908155542,
     "z": 7000,
-    "height": 225.07387367181585,
+    "height": 211.29384058986795,
     "width": 556.94300372872806,
     "tabOrder": 7000
   },
@@ -86,37 +86,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "453cd98429046e5b7560",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "PriceTier"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "911e0f443fc139cefe2c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Listing Count"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
