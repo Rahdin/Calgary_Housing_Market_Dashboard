@@ -3,7 +3,7 @@
   "name": "a88af68225602c159c4a",
   "position": {
     "x": 30.127019151885484,
-    "y": 171.49226286457892,
+    "y": 172.65099437042065,
     "z": 0,
     "height": 200.46055051062265,
     "width": 349.93691476420832,
@@ -69,6 +69,40 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },
