@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "dadde5271c95c9eb688e",
   "position": {
-    "x": 364.02254058145729,
-    "y": 142.39367518012841,
+    "x": 370.5282831964264,
+    "y": 160,
     "z": 1000,
-    "height": 140.09700299980375,
+    "height": 120,
     "width": 240.0022428439261,
     "tabOrder": 1000
   },
@@ -52,23 +52,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f3f99fc4d1188d08bf86",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Median Price"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

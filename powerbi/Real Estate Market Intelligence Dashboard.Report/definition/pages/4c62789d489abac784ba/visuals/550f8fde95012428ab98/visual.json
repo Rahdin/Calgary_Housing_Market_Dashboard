@@ -93,37 +93,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ace50cbd31acb805134d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Quadrant"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e6390af7df1fbd5731c2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Listing Count"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "0f6e769b6ab362e81afc",
   "position": {
-    "x": 666.03493229414892,
-    "y": 142.39367518012841,
+    "x": 671.010307736877,
+    "y": 160,
     "z": 2000,
-    "height": 140.09700299980375,
+    "height": 120,
     "width": 240.0022428439261,
     "tabOrder": 2000
   },
@@ -52,23 +52,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cb8336a64e587902dc34",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Average Price per SqFt"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "37ff24b3cd0278186f11",
   "position": {
-    "x": 941.6355939331072,
-    "y": 0,
+    "x": 908.44550057993149,
+    "y": 18.539704093467989,
     "z": 6000,
-    "height": 129.76197818834282,
-    "width": 299.715719532367,
+    "height": 129.77792865427594,
+    "width": 298.95272850717134,
     "tabOrder": 6000
   },
   "visual": {
@@ -60,5 +60,23 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3e7887cf9637407b4c61",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "BedBand"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -3,7 +3,7 @@
   "name": "bbd02761328c30a6af27",
   "position": {
     "x": 972.64066836749,
-    "y": 1.1483360901623259,
+    "y": 20,
     "z": 11000,
     "height": 120.57528946704421,
     "width": 240.0022428439261,
@@ -60,23 +60,5 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "de7db00aa6f07f31ab66",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "BedBand"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

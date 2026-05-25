@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "2d33b38756afd1265714",
   "position": {
-    "x": 25.492093128518487,
-    "y": 453.064018784124,
+    "x": 70,
+    "y": 450,
     "z": 3000,
-    "height": 242.17488472092563,
-    "width": 640.77852273048745,
+    "height": 240,
+    "width": 556,
     "tabOrder": 3000
   },
   "visual": {
@@ -87,7 +87,7 @@
                 "Property": "Average Price per SqFt"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }

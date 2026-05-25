@@ -3,10 +3,10 @@
   "name": "c578be4693759d64c2b9",
   "position": {
     "x": 857.46131432289451,
-    "y": 166.85733684121192,
+    "y": 171.49226286457892,
     "z": 2000,
-    "height": 209.73040255735663,
-    "width": 410.19095306797931,
+    "height": 200.46055051062265,
+    "width": 349.93691476420832,
     "tabOrder": 2000
   },
   "visual": {
@@ -52,5 +52,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9d5df47ab25060f7ba6a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listings Under 1M"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

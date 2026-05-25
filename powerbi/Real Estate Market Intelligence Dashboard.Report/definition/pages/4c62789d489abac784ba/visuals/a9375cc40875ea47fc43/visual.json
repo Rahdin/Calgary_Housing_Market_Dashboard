@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "a9375cc40875ea47fc43",
   "position": {
-    "x": 69.2829557879391,
-    "y": 1.5311264683618833,
+    "x": 70,
+    "y": 20,
     "z": 9000,
     "height": 120,
     "width": 240,
@@ -60,23 +60,5 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "5c2b28157252a0921f2f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "Quadrant"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

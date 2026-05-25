@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "d627ca1c72d0f1901add",
   "position": {
-    "x": 0,
+    "x": 70,
     "y": 407.87349005629579,
     "z": 2000,
-    "height": 311.69877507143059,
-    "width": 1258.3824153441399,
+    "height": 280,
+    "width": 1140.1918017482815,
     "tabOrder": 2000
   },
   "visual": {
@@ -113,5 +113,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c57fef6d842d8bda2e72",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Brokerage"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fc3e531bdf82a30a626e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listing Count"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f0f23ac10537d26b9a6e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Market Share %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "46f996b9c01e3c7a031a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median Price"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

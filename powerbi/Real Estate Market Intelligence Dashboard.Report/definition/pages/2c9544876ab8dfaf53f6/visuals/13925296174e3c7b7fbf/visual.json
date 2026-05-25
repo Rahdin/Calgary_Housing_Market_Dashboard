@@ -3,10 +3,10 @@
   "name": "13925296174e3c7b7fbf",
   "position": {
     "x": 30.127019151885484,
-    "y": 391.6512489745113,
+    "y": 405.55602704461228,
     "z": 3000,
-    "height": 327.92101615321508,
-    "width": 1237.5252482389883,
+    "height": 298.95272850717134,
+    "width": 1177.2712099352175,
     "tabOrder": 3000
   },
   "visual": {
@@ -86,10 +86,10 @@
                     "Entity": "Listings"
                   }
                 },
-                "Property": "Listing Count"
+                "Property": "Average Price per SqFt"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -181,5 +181,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "479ebf410d3ed090d501",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "PriceTier"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b9d8856100a42640ed99",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Listing Count"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "af671dd5bbc21002d432",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Average Price per SqFt"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c8bb21be70db72fc0628",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Listings"
+              }
+            },
+            "Property": "Median SqFt"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
