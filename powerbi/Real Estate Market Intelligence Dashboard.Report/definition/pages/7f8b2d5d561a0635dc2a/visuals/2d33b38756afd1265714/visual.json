@@ -31,6 +31,23 @@
             },
             {
               "field": {
+                "NativeVisualCalculation": {
+                  "Language": "dax",
+                  "Expression": "EXPANDALL(SUM([Listing Count_Base]), ROWS COLUMNS)",
+                  "Name": "Listing Count"
+                },
+                "Annotations": {
+                  "customTotalMetadata": {
+                    "baseQueryName": "Listings.Listing Count"
+                  }
+                }
+              },
+              "queryRef": "select",
+              "nativeQueryRef": "Listing Count",
+              "format": "0"
+            },
+            {
+              "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
@@ -41,7 +58,26 @@
                 }
               },
               "queryRef": "Listings.Listing Count",
-              "nativeQueryRef": "Listing Count"
+              "nativeQueryRef": "Listing Count_Base",
+              "hidden": true,
+              "displayName": "Listing Count_Base"
+            },
+            {
+              "field": {
+                "NativeVisualCalculation": {
+                  "Language": "dax",
+                  "Expression": "EXPANDALL(SUM([Median Price_Base]), ROWS COLUMNS)",
+                  "Name": "Median Price"
+                },
+                "Annotations": {
+                  "customTotalMetadata": {
+                    "baseQueryName": "Listings.Median Price"
+                  }
+                }
+              },
+              "queryRef": "select1",
+              "nativeQueryRef": "Median Price",
+              "format": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############"
             },
             {
               "field": {
@@ -55,7 +91,26 @@
                 }
               },
               "queryRef": "Listings.Median Price",
-              "nativeQueryRef": "Median Price"
+              "nativeQueryRef": "Median Price_Base",
+              "hidden": true,
+              "displayName": "Median Price_Base"
+            },
+            {
+              "field": {
+                "NativeVisualCalculation": {
+                  "Language": "dax",
+                  "Expression": "EXPANDALL(SUM([Average Price per SqFt_Base]), ROWS COLUMNS)",
+                  "Name": "Average Price per SqFt"
+                },
+                "Annotations": {
+                  "customTotalMetadata": {
+                    "baseQueryName": "Listings.Average Price per SqFt"
+                  }
+                }
+              },
+              "queryRef": "select2",
+              "nativeQueryRef": "Average Price per SqFt",
+              "format": "\\$#,0;(\\$#,0);\\$#,0"
             },
             {
               "field": {
@@ -69,7 +124,9 @@
                 }
               },
               "queryRef": "Listings.Average Price per SqFt",
-              "nativeQueryRef": "Average Price per SqFt"
+              "nativeQueryRef": "Average Price per SqFt_Base",
+              "hidden": true,
+              "displayName": "Average Price per SqFt_Base"
             }
           ]
         }
@@ -100,6 +157,78 @@
               "expr": {
                 "Literal": {
                   "Value": "'growToFit'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "underline": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Arial Black'''"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

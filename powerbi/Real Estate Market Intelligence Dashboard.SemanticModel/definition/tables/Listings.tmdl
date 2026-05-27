@@ -26,8 +26,10 @@ table Listings
 		lineageTag: 854db713-5d07-4b37-8bfc-753cc9eadd3b
 
 	measure 'Average Price per SqFt' = AVERAGE('Listings'[PricePerSqFt])
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: \$#,0;(\$#,0);\$#,0
 		lineageTag: cdc42768-1b54-478c-b429-dc0ed246bef9
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	measure 'Median SqFt' = MEDIAN('Listings'[SqFt])
 		lineageTag: 59582827-6a62-4a91-b2fc-a7d97b215fce
