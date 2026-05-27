@@ -23,11 +23,11 @@
                       "Entity": "Listings"
                     }
                   },
-                  "Property": "PriceTier"
+                  "Property": "Quadrant"
                 }
               },
-              "queryRef": "Listings.PriceTier",
-              "nativeQueryRef": "PriceTier",
+              "queryRef": "Listings.Quadrant",
+              "nativeQueryRef": "Quadrant",
               "active": true
             }
           ]
@@ -123,20 +123,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "cc66a3d02ea89b33ba89",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Listings"
-              }
-            },
-            "Property": "PriceTier"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "cdd0b73d7e03ba47762b",
         "field": {
